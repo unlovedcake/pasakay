@@ -14,7 +14,6 @@ import 'package:pasakay/app/global/instance_firebase.dart';
 import 'package:pasakay/app/models/predicted_places_model.dart';
 import 'package:pasakay/app/modules/driver/controllers/driver_controller.dart';
 import 'package:pasakay/app/repositories/auth_repository.dart';
-import 'package:pasakay/app/repositories/notification_repository.dart';
 import 'package:pasakay/app/repositories/search_place_repository.dart';
 import 'package:pasakay/app/routes/app_pages.dart';
 import 'package:pasakay/app/utils/custom_snackbar.dart';
@@ -562,11 +561,11 @@ class _RequestRideLocationState extends State<RequestRideLocation> {
                                       }
                                     }).whenComplete(() async {
                                       LoadingIndicator.closeLoadingIndicator();
-                                      NotificationRepository.sendFcmMessage(
-                                          'Request Ride Accepted',
-                                          userInfo.value.driver.name +
-                                              ' is on the way your location',
-                                          data['fcmToken']);
+                                      // NotificationRepository.sendFcmMessage(
+                                      //     'Request Ride Accepted',
+                                      //     userInfo.value.driver.name +
+                                      //         ' is on the way your location',
+                                      //     data['fcmToken']);
                                       QuerySnapshot querySnapshots =
                                           await FirebaseFirestore.instance
                                               .collection('request_ride')
