@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "604932579251",
+    "project_id": "pasakay-67ea7",
+    "storage_bucket": "pasakay-67ea7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604932579251:android:25c1a8c9f5f6ed3b03f5c6",
+        "android_client_info": {
+          "package_name": "com.pasakay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCIkXEPFYb6HPd07Z_sOEI7ngrYtejvqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
